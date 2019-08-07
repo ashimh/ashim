@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<title>ASHIM PANDA</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+<div class="bord">
+	<div class="nav">
+
+		<a class="a active" href="#">HOME</a>
+		<a class="c" href="#">PROJECTS</a>
+		<a class="d" href="#">CONTACT</a>
+		
+</div>
+</div>
+
+
+<div class="content">
+	
+	<div class="home"  >
+		<h1>I Am AShim panda</h1>
+		<h3>Designer, programmer, android enthusiast</h3>
+	</div>
+
+	<div class="project">
+		<ul>
+			<li>
+				<a href="https://bit.ly/2X5pVvO" target="_blank"><h1>CGPA CALCULATOR AND SAVE DATA </h1></a>
+		<p>This project mainly calculates cgpa, sgpa and percentage of jntuk affiliated college students subject wise and save their data in the database so that they can view the data anytime.</p>
+			</li>
+
+			<li>
+				<h1>PHOTO TO WORD GUESS</h1>
+				<p>This is a mini game which uses firebase database to authenticate users and user guesses the photo shown and choose correct name arranging words from given alphabets and save their score in the database. It also has leaderboard.</p>
+			</li>
+		</ul>
+		
+
+	</div>
+<div class="social">
+			<ul>
+				<li>
+					<a href="https://github.com/ashimh" target="_blank"><i class="fa fa-github"></i></a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/ashim-panda" target="_blank"><i class="fa fa-linkedin"></i></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/call._me_.ash/" target="_blank"><i class="fa fa-instagram"></i></a>
+				</li>
+				<li>
+					<a href="mailto:pandaashim1@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+				</li>
+				<li>
+					<a href="tel:8919466945"><i class="fa fa-phone"></i></a>
+				</li>
+			</ul>
+		</div>
+		<div class="contact-det">
+			<h3>Email: pandaashim1@gmail.com</h3>
+			<h3>Phone: 8919466945</h3>
+		</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('a').click(function() {
+				var selected = $(this);
+				$('a').removeClass('active');
+				$(selected).addClass('active');
+			});
+		});
+
+		var $a = $('.a'), $c = $('.c'), $d = $('.d');
+		var $home = $('.home'), $project = $('.project'), $contact = $('.social');
+		var $contactdet = $('.contact-det');
+
+		$project.fadeOut();
+		$contact.fadeOut();
+		$contactdet.fadeOut();
+		$a.click(function() {
+			$home.fadeIn();
+			$project.fadeOut();
+			$contact.fadeOut();
+			$contactdet.fadeOut();
+		});
+		$c.click(function() {
+			$home.fadeOut();
+			$project.fadeIn();
+			$contact.fadeOut();
+			$contactdet.fadeOut();
+		});
+		$d.click(function() {
+			$home.fadeOut();
+			$project.fadeOut();
+			$contact.fadeIn();
+			$contactdet.fadeIn();
+
+		})
+
+
+	</script>
+</body>
+
+</html>
